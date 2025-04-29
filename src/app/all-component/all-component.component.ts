@@ -1,11 +1,11 @@
-import { GenderComponentComponent } from './../gender-component/gender-component.component';
 import { Component, OnInit } from '@angular/core';
 
 import { HttpClient, HttpClientModule } from '@angular/common/http'; // Import HttpClientModule here
+import { UserComponentComponent } from '../user-component/user-component.component';
 @Component({
   selector: 'app-all-component',
   standalone: true, // ✅ ADD THIS
-  imports: [GenderComponentComponent,
+  imports: [UserComponentComponent,
     HttpClientModule   // ✅ ADD THIS to support HttpClient
   ],
   templateUrl: './all-component.component.html',
