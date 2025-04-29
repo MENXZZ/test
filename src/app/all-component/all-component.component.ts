@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 import { HttpClient, HttpClientModule } from '@angular/common/http'; // Import HttpClientModule here
 import { UserComponentComponent } from '../user-component/user-component.component';
+import { DrinkComponentComponent } from '../drink-component/drink-component.component';
 @Component({
   selector: 'app-all-component',
   standalone: true, // ✅ ADD THIS
-  imports: [UserComponentComponent,
+  imports: [UserComponentComponent,DrinkComponentComponent,
     HttpClientModule   // ✅ ADD THIS to support HttpClient
   ],
   templateUrl: './all-component.component.html',

@@ -1,0 +1,21 @@
+<div class="container mt-5">
+  <div class="card shadow-sm">
+    <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+      <h2 class="mb-0">Drink Menu</h2>
+      <button class="btn btn-light btn-sm" (click)="onAddDrink()">Add Drink</button>
+    </div>
+
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let drink of drinks; let i = index">
+        <div>
+          <strong>{{ drink.name }}</strong> – ${{ drink.price }}
+        </div>
+        <div>
+          <button class="btn btn-sm btn-warning me-2" (click)="onEditDrink(drink, i)">Update</button>
+          <button class="btn btn-sm btn-danger" (click)="onDeleteDrink(i)">Delete</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+

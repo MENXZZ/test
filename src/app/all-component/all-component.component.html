@@ -1,13 +1,28 @@
-<app-user-component/>
-<div style="" class="test">
-  <h4 style="display: flex; flex-direction: column; align-items: center;">{{hello.title}}</h4>
-  <p style="display: flex; flex-direction: column; align-items: center;">{{hello.id}}</p>
-  <p style="display: flex; align-items: center; flex-direction: column; ">all-component works!</p>
-  <h1>userId: 1, id: 1,
-    title: 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit',
-    body: 'quia et suscipit\n' +
-      'suscipit recusandae consequuntur expedita et cum\n' +
-      'reprehenderit molestiae ut ut quas totam\n' +
-      'nostrum rerum est autem sunt rem eveniet architecto'</h1>
-</div>
+<div class="container my-5">
+  <!-- Subcomponents -->
+  <app-user-component></app-user-component>
+  <app-drink-component></app-drink-component>
 
+  <!-- Main Content Card -->
+  <div class="card mt-4 shadow-sm">
+    <div class="card-body text-center">
+      <h4 class="card-title">{{ hello.title }}</h4>
+      <p class="card-subtitle text-muted">ID: {{ hello.id }}</p>
+      <p class="mt-3">All-component works!</p>
+
+      <div class="mt-4 text-start">
+        <h5 class="fw-bold">User Data</h5>
+        <p><strong>userId:</strong> 1</p>
+        <p><strong>id:</strong> 1</p>
+        <p><strong>title:</strong> sunt aut facere repellat provident occaecati excepturi optio reprehenderit</p>
+        <p><strong>body:</strong></p>
+        <pre class="bg-light p-3 rounded">
+quia et suscipit
+suscipit recusandae consequuntur expedita et cum
+reprehenderit molestiae ut ut quas totam
+nostrum rerum est autem sunt rem eveniet architecto
+        </pre>
+      </div>
+    </div>
+  </div>
+</div>
