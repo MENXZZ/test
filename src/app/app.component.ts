@@ -10,5 +10,6 @@ import { GenderComponentComponent } from './gender-component/gender-component.co
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'my-angular-apps';
+
+  title = 'my-angular-app';
 }
